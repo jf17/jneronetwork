@@ -14,6 +14,8 @@ public class BinaryClassificationNeuron {
     }
 
     public void put(String key, boolean binaryClassificator) {
+        
+         if(myMap.containsKey(key)==false){myMap.put(key, new LongAdder());}
 
         if (myMap.containsKey(key) && binaryClassificator == true) {
             myMap.get(key).increment();
