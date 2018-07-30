@@ -21,9 +21,7 @@ public class BinaryClassificationNeuron {
             myMap.get(key).increment();
         } else if (myMap.containsKey(key) && binaryClassificator == false) {
             myMap.get(key).decrement();
-        } else {
-            myMap.put(key, new LongAdder());
-        }
+        } 
 
     }
 
