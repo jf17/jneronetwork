@@ -1,3 +1,3 @@
 # jneronetwork
 
-## on Titanic Data Set Score : 0.78579485
+## Score (on Titanic DataSet) : 0.78579485
