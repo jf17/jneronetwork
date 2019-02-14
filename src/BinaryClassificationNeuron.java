@@ -24,7 +24,12 @@ public class BinaryClassificationNeuron {
         } 
 
     }
+    public int getScoreByKey(String key) {
 
+        LongAdder la= myMap.get(key);
+        return la.intValue();
+
+    }
     public void print() {
 
         System.out.println(myMap);
